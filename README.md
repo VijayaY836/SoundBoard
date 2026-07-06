@@ -4,8 +4,6 @@ A retro rack-mounted drum machine / soundboard, built as a single self-contained
 
 Demo Video : https://drive.google.com/file/d/1nzLz5MeZHq6NevD0rzAqmWzxQEmeMdDe/view?usp=sharing
 
-## Quick start
-
 ## Features
 
 - **14 synthesized channels** — kick, snare, hi-hat, clap, tom, cowbell, rimshot, laser, zap, blip, chime, boom, coin, and whoosh, each built from oscillators, filtered noise, or both.
@@ -58,5 +56,10 @@ No build step, server, or dependencies beyond a browser with Web Audio API suppo
 
 ## Browser support notes
 
-- All pads are real `<button>` elements with `aria-label`s, so they're reachable and readable via keyboard and screen reader.
-- Respects `prefers-reduced-motion` for pad press animations.
+- Requires `AudioContext` (or `webkitAudioContext` fallback for older Safari).
+- Audio playback may need a user gesture (click/keypress) to start due to browser autoplay policies — the app resumes the context on the first pad hit.
+- Respects `prefers-reduced-motion` by disabling pad/slider transition animations.
+
+## File structure
+
+Everything — markup, styles, and script — lives in a single `.html` file for easy sharing and zero-install use.
