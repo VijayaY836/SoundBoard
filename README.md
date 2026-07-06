@@ -2,6 +2,8 @@
 
 A single-file browser soundboard with 14 synthesized sound effects, a hardware-fader volume control, and a stop-all kill switch. No audio files — every sound is generated live with the Web Audio API.
 
+Demo Video : https://drive.google.com/file/d/1nzLz5MeZHq6NevD0rzAqmWzxQEmeMdDe/view?usp=sharing
+
 ## Quick start
 
 1. Download `soundboard.html`.
